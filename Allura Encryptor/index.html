@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Allura Encryptor</title>
+
+</head>
+
+<body id="main-Box">
+    <header>
+        <img class="logo" src="Imagenes/Logo.png" alt="Allura log">
+    </header>
+    <main id="box">
+
+        <section class="encryptBox">
+            <textarea class="text-area" cols="30" rows="10" placeholder="Enter text"></textarea>
+            <div>
+                <h6 class="info">
+                    &#x24D8; Only lowercase letters without accents.
+                </h6>
+            </div>
+            <div class="buttons">
+                <button class="btn-Encrypt" onclick="btnEncrypt()">Encrypt</button>
+                <button class="btn-Decrypt" onclick="btnDecrypt()">Decrypt</button>
+            </div>
+        </section>
+
+        <section class="showBox">
+            <textarea class="box-message" cols="20" rows="10"></textarea>
+            <div id="instructions">
+                <p class="p1">No message was found</p>
+                <br>
+                <br>
+                <p class="p2">Please insert a text to Encrypt or Decrypt</p>
+            </div>
+            <div>
+                <button class="btn-copy" onclick="btncopy()">Copiar</button>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+
+
+    <script src="/script.js"></script>
+
+</body>
+
+
+</html>
